@@ -1,0 +1,44 @@
+//////////////////////////////
+// Comments
+//////////////////////////////
+.comment-wrapper {
+  @extend %border-style;
+  background: $article-bg;
+  padding: 10px;
+  font-size: 1em;
+
+  h2 {
+    @extend %block-title;
+    }
+  }
+
+ .comment-form {
+   font-size: .900em;
+
+   .tips li{
+     padding-bottom: 5px;
+     }
+
+   .form-actions {
+     input {
+       margin-left: 5px;
+       }
+     }
+   }
+
+ .comment {
+  margin-bottom: 15px;
+
+  h3 {
+    @extend %block-title-small;
+    }
+  .submitted {
+    font-size: .800em;
+    margin: 6px 0 6px 0;
+    }
+  .content p {
+   font-size: .850em;
+   margin: 6px 0 6px 0;
+   line-height: 1.4em;
+   }
+  }

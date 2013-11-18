@@ -1,0 +1,22 @@
+name = Katturai
+description = Katturai means Articles in Tamil Language. This is a simple responsive theme will fit more exactly for blogs.
+core = 7.x
+
+; Stylesheets
+stylesheets[all][] = css/style.css
+;stylesheets[all][] = css/responsive.css
+
+; JavaScript files
+; scripts[] = js/script.js
+
+; Regions
+regions[header] = Header
+regions[help] = Help
+regions[highlighted] = Highlighted
+regions[content] = Content
+regions[sidebar_first] = Sidebar
+regions[footer] = Footer
+
+; Settings
+settings[bootstrap_source] = bootstrapcdn
+settings[bootstrap_version] = 3.0.0

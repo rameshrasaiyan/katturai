@@ -1,0 +1,21 @@
+%border-style {
+  @include border-radius(2px);
+  border: 1px solid $border-shadow;
+  margin-bottom: 20px;
+  }
+
+%border-style-none {
+  @include border-radius(0);
+  border: 0;
+  margin-bottom: 20px;
+  }
+
+%block-title {
+  font-size: 1.5em;
+  margin-bottom:10px;
+  }
+
+%block-title-small {
+  font-size: 1.2em;
+  margin:6px 0 6px 0;
+  }
