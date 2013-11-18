@@ -172,6 +172,10 @@ ul.inline li.disqus_comments_num {
   margin-top: 10px;
 }
 
+.messages {
+  margin: 0 auto;
+}
+
 .front .article-content img {
   width: 138px;
   height: 78px;

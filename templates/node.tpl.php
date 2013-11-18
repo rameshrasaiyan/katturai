@@ -117,10 +117,12 @@
     </div>
     <footer class="article-footer">
       <ul>
-        <li><span class="glyphicon glyphicon-comment"></span>
-         <!-- <a href=<?php print $node_url;?>#comments><?php print $comment_count; ?> Comments</a>-->
-         <a href="<?php print $node_url; ?>#disqus_thread">Comments</a>
-        </li>
+        <?php if($teaser): ?>
+          <li><span class="glyphicon glyphicon-comment"></span>
+           <!-- <a href=<?php print $node_url;?>#comments><?php print $comment_count; ?> Comments</a>-->
+             <a href="<?php print $node_url; ?>#disqus_thread">Comments</a>
+          </li>
+        <?php endif; ?>
         <?php if ($tags = render($content['field_tags'])): ?>
           <li class="tags"><span class="glyphicon glyphicon-tags"></span>
             <span><?php print $tags; ?></span>
