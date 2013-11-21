@@ -207,7 +207,7 @@ ul.inline li.disqus_comments_num {
   margin-bottom: 20px;
 }
 #content-wrapper .articles .glyphicon {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 #content-wrapper .articles .article-header {
   padding: 10px;
@@ -319,4 +319,46 @@ table tr td {
   font-size: .850em;
   margin: 6px 0 6px 0;
   line-height: 1.4em;
+}
+
+.not-front .articles .article-content h1 {
+  font-size: 1.8em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content h2 {
+  font-size: 1.6em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content h3 {
+  font-size: 1.5em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content h4 {
+  font-size: 1.4em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content h5 {
+  font-size: 1.3em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content h6 {
+  font-size: 1.1em;
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content ul {
+  list-style-type: disc;
+  list-style: disc;
+  padding: 0 0 10px 20px;
+}
+.not-front .articles .article-content p {
+  padding-bottom: 10px;
+}
+.not-front .articles .article-content img {
+  width: 35%;
+  height: auto;
+}
+
+.not-front section h1.title {
+  font-size: 1.8em;
+  padding-bottom: 10px;
 }

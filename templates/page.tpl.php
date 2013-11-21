@@ -89,7 +89,9 @@
           <div id="name-and-slogan">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              <h1 id="site-name">
+                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+              </h1>
               <?php else: /* Use h1 when the content title is empty */ ?>
               <h1 id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
@@ -105,17 +107,12 @@
         
       </div> <!-- /#site-info -->
 
-    
-      <div id="navigation"><div class="section">
-<!--        <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?> -->
-      </div></div> <!-- /.section, /#navigation -->
-    
       <?php if ($main_menu): ?>
         <nav>
           <?php print theme('links__system_main_menu', array('links' => $main_menu,'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')),)); ?>          
         </nav>
       <?php endif; ?>
-      </div>
+    </div>
   </header>
   
   <?php if ($breadcrumb): ?>
