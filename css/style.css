@@ -74,22 +74,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 6px 0 6px 0;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: "tenso", sans-serif;
   font-size: 16px;
   background: url("../images/bg.png") repeat 0 0;
-  margin: 0;
   padding: 0;
+  margin: 0 0 100px;
+  /* Footer height for sticky footer */
 }
 
 ::-moz-selection {
-  background: #bf7130;
-  color: white;
+  background: #b3d4fc;
+  color: black;
 }
 
 ::selection {
-  background: #bf7130;
-  color: white;
+  background: #b3d4fc;
+  color: black;
 }
 
 ul.inline li.disqus_comments_num {
@@ -136,6 +142,7 @@ ul.inline li.disqus_comments_num {
 }
 #header nav li {
   float: left;
+  padding: 0;
 }
 #header nav li a {
   line-height: 32px;
@@ -145,6 +152,9 @@ ul.inline li.disqus_comments_num {
 }
 #header nav li span {
   padding: 0 10px 0 10px;
+}
+#header nav li.last span {
+  display: none;
 }
 
 .sidebar {
@@ -188,13 +198,17 @@ ul.inline li.disqus_comments_num {
   padding: 0 10px 10px 0;
 }
 
+.not-front #content-wrapper {
+  padding-top: 5px;
+}
+
 #content-wrapper {
   padding: 25px 0 0 0;
   overflow: hidden;
   *zoom: 1;
 }
 #content-wrapper .articles {
-  background: #f8f8f8;
+  background: white;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
@@ -236,13 +250,20 @@ ul.inline li.disqus_comments_num {
   font-size: .800em;
   color: #555555;
 }
+#content-wrapper .articles .article-content .content {
+  font-size: 1.2em;
+  font-weight: 300;
+}
 #content-wrapper .articles .article-content .content p {
   padding-bottom: 10px;
 }
 #content-wrapper .articles .article-content h2.article-title {
-  font-size: 1.5em;
-  font-weight: bold;
+  font-size: 1.8em;
+  font-weight: 300;
   padding-bottom: 10px;
+  color: black;
+}
+#content-wrapper .articles .article-content h2.article-title a {
   color: black;
 }
 #content-wrapper .articles .article-content span.readmore {
@@ -285,6 +306,13 @@ ul.inline li.disqus_comments_num {
 #footer-wrapper {
   border-top: 5px solid #e7e7e7;
   padding-top: 15px;
+  background: black;
+  height: 100px;
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 table tr td {

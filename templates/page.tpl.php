@@ -160,6 +160,7 @@
         
       </div>
     </main>
+    <div id='layout_footer'></div>
   </div>
   <div id="footer-wrapper">
     <footer id="footer" class="container">Footer</footer>

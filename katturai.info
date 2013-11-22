@@ -7,7 +7,7 @@ stylesheets[all][] = css/style.css
 ;stylesheets[all][] = css/responsive.css
 
 ; JavaScript files
-; scripts[] = js/script.js
+scripts[] = js/typekit.js
 
 ; Regions
 regions[header] = Header
